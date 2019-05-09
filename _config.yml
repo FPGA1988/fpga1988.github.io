@@ -6,7 +6,7 @@
 # Site
 title: 离场悲剧
 subtitle:
-description:
+description: "一场提升自我的旅行"
 author: FPGA1988
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
 language: zh-Hans
@@ -219,9 +219,10 @@ font:
 # Social Links
 # Key is the link label showing to end users.
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
-#social:
+social:
   #LinkLabel: Link
-
+  GitHub : fpga1988.github.com
+  weibo : weibo.com/离场悲剧
 
 # Social Links Icons
 # Icon Mapping:
