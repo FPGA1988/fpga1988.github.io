@@ -388,7 +388,7 @@ baidu_analytics: ad438d00388c81d5a25afcb85d76c4ad
 # Disqus
 disqus:
   enable: true
-  shortname: fpga1988
+  shortname:
   count: true
   # hide comments (visitors need to click to load the comments)
   # count need to be false when hide is true
