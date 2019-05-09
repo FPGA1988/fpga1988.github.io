@@ -19,7 +19,7 @@ baseurl:
 permalink: pretty
 
 # Pagination
-paginate: 10
+paginate: 5
 #paginate_path: "/page:num/"
 #archive:
   #paginate: 10
@@ -222,7 +222,7 @@ font:
 social:
   #LinkLabel: Link
   GitHub: https://github.com/FPGA1988
-  Weibo: "http://weibo.com/lichangbeiju"
+  Weibo: http://weibo.com/lichangbeiju
 
 # Social Links Icons
 # Icon Mapping:
