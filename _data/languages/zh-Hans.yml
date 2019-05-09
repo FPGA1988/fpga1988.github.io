@@ -91,3 +91,6 @@ symbol:
   comma: '， '
   period: '。 '
   colon: '：'
+
+social:
+  Weibo: 微博
