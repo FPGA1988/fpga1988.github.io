@@ -9,7 +9,7 @@ subtitle:
 description:
 author: FPGA1988
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
-language: en
+language: zh-Hans
 date_format: '%Y-%m-%d'
 
 # URL
@@ -117,12 +117,18 @@ index_with_subtitle: false
 
 # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)
 menu:
+  # 主页
   home: /
-  #categories: /categories/
-  #about: /about/
+  # 分类页
+  categories: /categories/
+  # 关于
+  about: /about/
+  # 归档页
   archives: /archives/
+  # 标签页
   tags: /tags/
   #sitemap: /sitemap.xml
+  # 公益页面
   #commonweal: /404.html
 
 
