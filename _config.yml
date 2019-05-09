@@ -396,7 +396,7 @@ disqus:
 
 # <wildfire>
 wildfire:
-  enable: true
+  enable: false
   # version - It's recommended to use the following versions.
   loaderVersion: 1.2.5 # https://www.npmjs.com/package/wildfire-comment
   useDev: true
@@ -438,7 +438,7 @@ changyan:
 
 # Support for LiveRe comments system.
 # You can get your uid from https://livere.com/insight/myCode (General web site)
-# livere_uid: MTAyMC80NDE0Ny8yMDY4MQ==
+livere_uid: MTAyMC80NDE0Ny8yMDY4MQ==
 
 # Support for gitalk comments system.
 gitalk:
