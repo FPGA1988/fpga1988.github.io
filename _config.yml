@@ -496,6 +496,8 @@ gitalk:
 # Make duoshuo show UA
 # user_id must NOT be null when admin_enable is true!
 # you can visit http://dev.duoshuo.com get duoshuo user id.
+
+# 多说已经不能使用
 duoshuo_info:
   ua_enable: true
   admin_enable: false
