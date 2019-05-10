@@ -2,7 +2,7 @@
   position: relative;
   margin: 0 auto;
   //width: $main-desktop;
-  width: 80%
+  width: 80%;
   @include tablet() {
     width: auto;
   }
