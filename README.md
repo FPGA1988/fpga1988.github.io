@@ -1,6 +1,16 @@
-# NexT
+# Jekyll + NexT个人博客
 
-> 精于心，简于形
+> 一场提升自我的旅行
+
+
+## 初衷
+自从2012年参加工作以来，在技术上，自己学过，用过很多东西。但无奈随着年龄的增长，记忆力逐渐衰退，于此同时，在自己刚入行的时候，无论是从网络还是从同事、领导那里都得到了很多帮助。因此，自己一直也有一个愿望，那就是可以用自己学到的东西，来对有需要的人提供那么一点参考，这或许，也是我一直追求技术的意义：去做一些有趣且有意义的事情。
+
+
+## 博客简介
+本博客fork自Simpleyyt的基于Jekyll环境的Next模板，其中，又参考了很多高手的博客风格而成，博客地址为 : https://fpga1988.github.io ,有兴趣的朋友可以去看看，博客中有我的详细联系方式，想探讨技术类问题的可以通过邮件等方式联系到我。
+
+## Next简介以及教程
 
 NexT 是由 [Hexo NexT](https://github.com/iissnan/hexo-theme-next) 移植而来的 Jekyll 主题。<!--commit: f951075d9b739d26b42472431995fa68d08796aa-->
 
@@ -14,22 +24,3 @@ NexT 是由 [Hexo NexT](https://github.com/iissnan/hexo-theme-next) 移植而来
 ## 浏览器支持 Browser support
 
 ![Browser support](http://iissnan.com/nexus/next/browser-support.png)
-
-
-## 贡献 Contributing
-
-欢迎提交问题与需求，修复代码。
-
-
-## 开发 Development
-
-NexT 主旨在于简洁优雅且易于使用，所以首先要尽量确保 NexT 的简洁易用性。
-
-NexT is built for easily use with elegant appearance. First things first, always keep things simple.
-
-
-## 捐赠
-
-支付宝捐赠链接还是要有的，万一真的有人捐呢。
-
-![支付宝扫码捐赠](http://7lryc0.com1.z0.glb.clouddn.com/a6x049034plyvjm1rvn4h28%20%281%29.png)
