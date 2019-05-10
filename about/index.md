@@ -1,7 +1,7 @@
 ---
 layout: page
 type: about
-title: 简历
+title: 关于我
 ---
 
 
