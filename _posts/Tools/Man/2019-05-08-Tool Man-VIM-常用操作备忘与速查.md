@@ -1,5 +1,5 @@
 ---
-title: "［工具]-速查-VIM/Gvim常用操作"
+title: "［工具]-速查-Vim/Gvim常用操作"
 date: 2019-05-10　14:45:00
 categories:
   - Tools
@@ -9,7 +9,7 @@ tags:
 keywords: VIM, 速查, 替换, 批量, 查找,　设置,　显示
 ---
 
-# BUffer操作
+# Buffer操作
 
 ## 打开buffer
 当使用命令vim或者gvim同时打开多个文件时，就会启动buffer，每一个文件都会放到一个buffer中，如命令
@@ -39,8 +39,6 @@ vim/gvim a.txt b.v c.c
 ## 在匹配符号间跳转
 %在匹配的符号之间进行跳转，如 ( 调到对应的 ) 上
 
-
-------
 
 
 # SET命令以及vim设置
@@ -197,41 +195,22 @@ n 为数字，若 n 为 .，表示从当前行开始到最后一行
 - `:s#vivian/#sky/#`: 替换当前行第一个 vivian/ 为 sky/
 - `:%s+/oradata/apras/+/user01/apras1+`: （使用+ 来 替换 / ）： /oradata/apras/替换成/user01/apras1/
 
-1. e.g  
+## 实例
 
 - `:s/vivian/sky/`: 替换当前行第一个 vivian 为 sky
 :s/vivian/sky/g 替换当前行所有 vivian 为 sky
-
-2. e.g
-
 - `:n,$s/vivian/sky/`:  替换第 n 行开始到最后一行中每一行的第一个 vivian 为 sky
-
-
 - `:n,$s/vivian/sky/g`: 替换第 n 行开始到最后一行中每一行所有 vivian 为 sky
-
-
 (n 为数字，若 n 为 .，表示从当前行开始到最后一行)
-
-
-3. e.g
 - `:%s/vivian/sky/`: （等同于```:g/vivian/s//sky/```） 替换每一行的第一个 vivian 为 sky
-
 - `:%s/vivian/sky/g`（等同于```:g/vivian/s//sky/g```） 替换每一行中所有 vivian 为 sky
-
-4. e.g
-
 可以使用 # 作为分隔符，此时中间出现的 / 不会作为分隔符
-
 - `:s#vivian/#sky/#` : 替换当前行第一个 vivian/ 为 sky/
 
-5. e.g
+- 删除文本中的```^M```
 
 
-删除文本中的```^M```
-
-
-问题描述：对于换行,window下用回车换行(0A0D)来表示，Linux下是回车(0A)来表示。这样，将window上的文件拷到Unix上用时，总会有个```^M```.请写个用在unix下的过滤windows文件的换行符(0D)的shell或c程序。
-
+> 问题描述：对于换行,window下用回车换行(0A0D)来表示，Linux下是回车(0A)来表示。这样，将window上的文件拷到Unix上用时，总会有个```^M```.请写个用在unix下的过滤windows文件的换行符(0D)的shell或c程序。
 
 使用命令：```cat filename1 | tr -d “^V^M” > newfile```；
 
