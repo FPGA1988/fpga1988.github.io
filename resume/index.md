@@ -2,6 +2,7 @@
 layout: page
 type: resume
 title: 简历
+group: menu
 ---
 
 
