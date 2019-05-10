@@ -119,14 +119,24 @@ index_with_subtitle: false
 menu:
   # 主页
   home: /
-  # 分类页
-  categories: /categories/
   # 关于
   about: /about/
+  # 简历
+  resume: /resume/
   # 归档页
   archives: /archives/
+  # 分类页
+  categories: /categories/
   # 标签页
   tags: /tags/
+
+  # 留言
+  #message: /message/
+
+
+  # 导航
+  myseo: /myseo/
+
   #sitemap: /sitemap.xml
   # 公益页面
   #commonweal: /404.html
@@ -148,6 +158,7 @@ menu_icons:
   archives: archive
   sitemap: sitemap
   commonweal: heartbeat
+  myseo: internet-explorer
 
 
 
