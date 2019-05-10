@@ -1,5 +1,5 @@
 ---
-title: "VIM常用操作速查"
+title: "［工具]-速查-VIM/Gvim常用操作"
 date: 2019-05-10　14:45:00
 categories:
   - Tools
@@ -9,24 +9,49 @@ tags:
 keywords: VIM, 速查, 替换, 批量, 查找,　设置,　显示
 ---
 
+# 1. BUffer操作
 
-* %在匹配的符号之间进行跳转，如 ( 调到对应的 ) 上
+## 1.1 打开buffer
+当使用命令vim或者gvim同时打开多个文件时，就会启动buffer，每一个文件都会放到一个buffer中，如命令
+```
+vim/gvim a.txt b.v c.c
+```
+同一个vim不同buffer之间的文件可以直接用`y` `p`命令拷贝内容，而不同vim间则需要通过系统剪切板
+## 1.2 Buffer之间跳转
+- 跳转到下一个buffer : `: bn`
+- 跳转到上一个buffer : `: b#` 注意，当首次执行buffer模式就执行这个命令的话因为vim不知道上一个buffer是什么，所以执行这条命令会出错
+- 跳转到指定buffer   : `: b<1/2/3/...>` 注意'<>'不需要输入，只需要输入类似`b1`即可跳转到指定第几个buffer
+
+
+## 1.3 向buffer添加新文件
+- `:e filepath/filename` : 打开指定文件，将至放置入buffer中
+
+
+
+
+# 2.跳转操作
+
+
+## 2.1 跳转到指定行
+直接输入`:行号`后回车即可跳到当前打开文件的指定行
+
+
+## 2.2 在匹配符号间跳转
+%在匹配的符号之间进行跳转，如 ( 调到对应的 ) 上
 
 
 ------
 
 
-# 1 SET命令
+# 3. SET命令以及vim设置
 
-
-
-## 1.1 设置换行字符数
+## 3.1 设置换行字符数
 
 > textwidth[tw]  ： set tw=200【注意tw和200之间不能有空格】
 > 是一种 word wrap 的功能，从左起算之固定每行的最大字符宽度。超过此宽度就会自动折行，这可是真的折行，也就是说在折行处会插入 EOL。预设是 0，也就是没有 word wrap 的功能。
 
 
-## 1.2 设置tab相关
+## 3.2 设置tab相关
 
 > 几乎所有的 OS 及软件都设定 Tab 就是 8 个字符长，这已经是个公认值，您硬要去改变它的话恐怕带来许多不便，但实际上关于程序风格，许多人又认为 8 个字符太长了，几个巢状循环下来就需折行，反而不方便。因此 Vim 体贴您，内建了 softtabstop 的功能，就是由 Vim 来代您制造出一个假的 Tab，实际上是空格符组成的 Tab。
 > set shiftwidth=4 : 设置tab位宽为4
@@ -40,7 +65,7 @@ keywords: VIM, 速查, 替换, 批量, 查找,　设置,　显示
 ```
 
 
-## 1.3 设置延时
+## 3.3 设置延时
 
 ```
 set WD=200
@@ -65,7 +90,7 @@ wq
 : %s/字符串/g
 ```
 
-# 2 高亮
+# 4 高亮
 
 1. 取消选择高亮 ```nohl```- 当用诸如*进行高亮搜索后，如果想取消这些已经查找到的字符串高亮，则可以输入这个命令
 2. 更改语法高亮
@@ -91,7 +116,7 @@ cal SetSyn ("verilog")
 
 
 
-# 3 区块操作
+# 5. 区块操作
 
 1.```gv```- 重选之前已经选择的区域，比如之前已经选择了一块区域并且完成了编辑，想要再次编辑相同位置，则可以使用本命令
 
@@ -115,46 +140,37 @@ cal SetSyn ("verilog")
 
 
 
-# 4 删除操作
+# 6. 删除操作  
 
-
-
-1.删除带有某字符串的行
+1. 删除带有某字符串的行  
 
 ```
 g/字符串/d
 ```
-
-
-
-2.删除不带有某字符串的行【保留带有某字符串的行】
+2. 删除不带有某字符串的行【保留带有某字符串的行】  
 
 ```
 v/字符串/d
 ```
 
+3. 删除重复行  
 
-3.删除重复行  
-排序
-
+- 排序
 
 :sort
 
-
-查找重复行
-
+- 查找重复行
 
 /^\(.\+\)$\n\1
-
 
 
 ------
 
 
 
-# 5 显示操作
+# 7. 显示操作
 
-1. 打开以及关闭特殊字符显示
+## 7.1 打开以及关闭特殊字符显示
 
 ```
 set list
@@ -167,82 +183,48 @@ set nolist
 
 
 
-# 6 VIM查找替换
+# 8 查找替换
+vi/vim 中可以使用 :s 命令来替换字符串
 
-
-    vi/vim 中可以使用 :s 命令来替换字符串
-
-
-```:s/vivian/sky/```:  替换当前行第一个 vivian 为 sky
-
-
-```:s/vivian/sky/g```:  替换当前行所有 vivian 为 sky
-
-
-```:n,$s/vivian/sky/```: 替换第 n 行开始到最后一行中每一行的第一个 vivian 为 sky
-
-
-```:n,$s/vivian/sky/g```: 替换第 n 行开始到最后一行中每一行所有 vivian 为 sky
-
-
+- `:s/vivian/sky/`     :  替换当前行第一个 vivian 为 sky  
+- `:s/vivian/sky/g`    :  替换当前行所有 vivian 为 sky
+- `:n,$s/vivian/sky/`  : 替换第 n 行开始到最后一行中每一行的第一个 vivian 为 sky
+- `:n,$s/vivian/sky/g` : 替换第 n 行开始到最后一行中每一行所有 vivian 为 sky
 n 为数字，若 n 为 .，表示从当前行开始到最后一行
-
-
-```:%s/vivian/sky/```:（等同于 ```:g/vivian/s//sky/```） 替换每一行的第一个 vivian 为 sky
-
-
-```:%s/vivian/sky/g```:（等同于 ```:g/vivian/s//sky/g```） 替换每一行中所有 vivian 为 sky
-
-
+- `:%s/vivian/sky/`    :（等同于 `:g/vivian/s//sky/`） 替换每一行的第一个 vivian 为 sky
+- `:%s/vivian/sky/g`   :（等同于 ```:g/vivian/s//sky/g```） 替换每一行中所有 vivian 为 sky
 可以使用 # 作为分隔符，此时中间出现的 / 不会作为分隔符
+- `:s#vivian/#sky/#`: 替换当前行第一个 vivian/ 为 sky/
+- `:%s+/oradata/apras/+/user01/apras1+`: （使用+ 来 替换 / ）： /oradata/apras/替换成/user01/apras1/
 
+1. e.g  
 
-```:s#vivian/#sky/#```: 替换当前行第一个 vivian/ 为 sky/
-
-
-```:%s+/oradata/apras/+/user01/apras1+```: （使用+ 来 替换 / ）： /oradata/apras/替换成/user01/apras1/
-
-
-1.
-
-
-```:s/vivian/sky/```: 替换当前行第一个 vivian 为 sky
-
-
+- `:s/vivian/sky/`: 替换当前行第一个 vivian 为 sky
 :s/vivian/sky/g 替换当前行所有 vivian 为 sky
 
+2. e.g
 
-2.
-
-
-```:n,$s/vivian/sky/```:  替换第 n 行开始到最后一行中每一行的第一个 vivian 为 sky
+- `:n,$s/vivian/sky/`:  替换第 n 行开始到最后一行中每一行的第一个 vivian 为 sky
 
 
-```:n,$s/vivian/sky/g```: 替换第 n 行开始到最后一行中每一行所有 vivian 为 sky
+- `:n,$s/vivian/sky/g`: 替换第 n 行开始到最后一行中每一行所有 vivian 为 sky
 
 
 (n 为数字，若 n 为 .，表示从当前行开始到最后一行)
 
 
-3.
+3. e.g
+- `:%s/vivian/sky/`: （等同于```:g/vivian/s//sky/```） 替换每一行的第一个 vivian 为 sky
 
+- `:%s/vivian/sky/g`（等同于```:g/vivian/s//sky/g```） 替换每一行中所有 vivian 为 sky
 
-```:%s/vivian/sky/```: （等同于```:g/vivian/s//sky/```） 替换每一行的第一个 vivian 为 sky
-
-
-```:%s/vivian/sky/g```（等同于```:g/vivian/s//sky/g```） 替换每一行中所有 vivian 为 sky
-
-
-4.
-
+4. e.g
 
 可以使用 # 作为分隔符，此时中间出现的 / 不会作为分隔符
 
+- `:s#vivian/#sky/#` : 替换当前行第一个 vivian/ 为 sky/
 
-```:s#vivian/#sky/#```替换当前行第一个 vivian/ 为 sky/
-
-
-5.
+5. e.g
 
 
 删除文本中的```^M```
@@ -260,7 +242,7 @@ n 为数字，若 n 为 .，表示从当前行开始到最后一行
 在vi中处理：首先使用vi打开文件，然后按ESC键，接着输入命令：```%s/^V^M//```。
 
 
-```:%s/^M$//g```
+- `:%s/^M$//g`
 
 
 如果上述方法无用，则正确的解决办法是：
@@ -274,29 +256,17 @@ strings A>B
 ```
 
 
-6.
-
-
-其它
+# 6. 其它
 
 
 利用 :s 命令可以实现字符串的替换。具体的用法包括：
 
 
 ```:s/str1/str2/```: 用字符串 str2 替换行中首次出现的字符串 str1
-
-
 ```:s/str1/str2/g```: 用字符串 str2 替换行中所有出现的字符串 str1
-
-
 ```:.,$ s/str1/str2/g```: 用字符串 str2 替换正文当前行到末尾所有出现的字符串 str1
-
-
 ```:1,$ s/str1/str2/g```: 用字符串 str2 替换正文中所有出现的字符串 str1
-
-
 ```:g/str1/s//str2/g```: 功能同上
-
 
 从上述替换命令可以看到：g 放在命令末尾，表示对搜索字符串的每次出现进行替换；不加 g，表示只对搜索
 
