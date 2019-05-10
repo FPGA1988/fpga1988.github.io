@@ -10,7 +10,7 @@
 
 [![GitHub release](https://img.shields.io/github/release/fpga1988/fpga1988.github.io.svg)](https://github.com/fpga1988/fpga1988.github.io/releases)
 
-[![Blog](https://img.shields.io/static/v1.svg?label=My Blog&message=离场悲剧&color=<9cf>)](https://fpga1988.github.io)
+[![Badge](https://img.shields.io/static/v1.svg?label=My Blog&message=离场悲剧&color=<9cf>)](https://fpga1988.github.io)
 
 ## 初衷
 自从2012年参加工作以来，在技术上，自己学过，用过很多东西。但无奈随着年龄的增长，记忆力逐渐衰退，于此同时，在自己刚入行的时候，无论是从网络还是从同事、领导那里都得到了很多帮助。因此，自己一直也有一个愿望，那就是可以用自己学到的东西，来对有需要的人提供那么一点参考，这或许，也是我一直追求技术的意义：去做一些有趣且有意义的事情。
