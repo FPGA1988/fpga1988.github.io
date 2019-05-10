@@ -1,1 +1,11 @@
 // Custom styles.
+
+// 1. 新增背景图
+
+body{
+    background:url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1557476558219&di=c9a921f789cf1b04228867959f9f3387&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201805%2F20%2F20180520024958_H3SvX.jpeg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-position:center;
+}

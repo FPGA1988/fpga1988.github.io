@@ -649,10 +649,10 @@ pace: false
 pace_theme: pace-theme-minimal
 
 # Canvas-nest
-canvas_nest: true
+canvas_nest: false #true
 
 # three_waves
-three_waves: false
+three_waves: false 
 
 # canvas_lines
 canvas_lines: false
