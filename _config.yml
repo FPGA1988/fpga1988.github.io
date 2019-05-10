@@ -541,9 +541,9 @@ rating:
 # Show number of visitors to each article.
 # You can visit https://leancloud.cn get AppID and AppKey.
 leancloud_visitors:
-  enable: false
-  app_id: #<app_id>
-  app_key: #<app_key>
+  enable: true #false
+  app_id: Ukh9IXfpPIERX14tqsbSqdnk-gzGzoHsz #<app_id>
+  app_key: YvdF0hUfzFMU3BUVbTw4jkgb #<app_key>
 
 # Show PV/UV of the website/page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi/
@@ -652,7 +652,7 @@ pace_theme: pace-theme-minimal
 canvas_nest: false #true
 
 # three_waves
-three_waves: false 
+three_waves: false
 
 # canvas_lines
 canvas_lines: false
