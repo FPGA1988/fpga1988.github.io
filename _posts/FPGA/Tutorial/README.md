@@ -2,14 +2,6 @@
 
 > 一场提升自我的旅行
 
-[![GitHub issues](https://img.shields.io/github/issues/fpga1988/fpga1988.github.io.svg)](https://github.com/fpga1988/fpga1988.github.io/issues)
-
-[![Github downloads](https://img.shields.io/github/downloads/fpga1988/fpga1988.github.io/total.svg)](https://github.com/fpga1988/fpga1988.github.io/releases/latest)
-
-[![DUB](https://img.shields.io/dub/l/vibe-d.svg)](https://github.com/fpga1988/fpga1988.github.io/blob/master/LICENSE)
-
-[![GitHub release](https://img.shields.io/github/release/fpga1988/fpga1988.github.io.svg)](https://github.com/fpga1988/fpga1988.github.io/releases)
-
 [![Badge](https://img.shields.io/static/v1.svg?label=MyBlog&message=离场悲剧&color=<9cf>)](https://fpga1988.github.io)
 
 ## 初衷
@@ -19,17 +11,21 @@
 ## 博客简介
 本博客fork自Simpleyyt的基于Jekyll环境的Next模板，其中，又参考了很多高手的博客风格而成，博客地址为 : https://fpga1988.github.io ,有兴趣的朋友可以去看看，博客中有我的详细联系方式，想探讨技术类问题的可以通过邮件等方式联系到我。
 
-## Next简介以及教程
+## FPGA教程简介
 
-NexT 是由 [Hexo NexT](https://github.com/iissnan/hexo-theme-next) 移植而来的 Jekyll 主题。<!--commit: f951075d9b739d26b42472431995fa68d08796aa-->
+### 写在前面的话
+从2010年左右开始，我开始接触FPGA这个东西。当时正处于大三期间，那段时间，因为学业太差导致的就业焦虑症萦绕着我。不巧，有学长来学校开设FPGA的入门培训班，去听了一下，感觉很不错，所以就和班上几个同学一起报名了。中间细节略过不谈，毕业后，也进入了成都的一家公司任职FPGA工程师职位。
+2015年底左右，自己已经到上海，并进入了第二家公司继续做FPGA设计。因为长期出差呆的不开心以及某些原因，再加上当时恰好有一家半导体公司HR给我打了电话，面试通过后，正式进入了半导体行业，从事ASIC的设计以及验证工作。  
+在新的公司里，虽然主职已经不是FPGA了，但是在芯片的RTL设计好之后，依旧需要使用FPGA进行芯片的Prototype验证。所谓的Prototye，大概操作也就是将RTL代码移植到FPGA上，然后在硬件验证平台上进行设计的功能验证。因此，可以说，从工作到现在，FPGA一直存在于并影响着我的工作。  
+从刚工作不久到现在，自己一直在某QQ群任职管理员一职，有空的时候会看看里面的朋友在工作学习中遇到的问题，再加上自己平时的积累，可以说在FPGA的基础应用中会遇到的问题，自己基本也有自己的一些理解。写这个教程，也是为了将自己的一些理解记录下来，供需要的同学进行参考，也希望能给想要进入FPGA行业的朋友提供自己的一份绵薄之力。
 
-<a href="http://simpleyyt.github.io/jekyll-theme-next/" target="_blank">在线预览 Preview</a> | <a href="http://simpleyyt.com" target="_blank">Yitao's Blog</a> | <a href="http://theme-next.simpleyyt.com" target="_blank">NexT 使用文档</a> |  [English Documentation](README.en.md)
+### 教程结构
+本教程的结构可能自己想到哪里就写到哪里，暂时没有详细的规划，但大体无非是从基础学习到应用实践，中间穿插的来讲。与此同时，本教程中可能需要涉及到其他相关知识，诸如Verilog VHDL SystemVerilog Tcl Python，一些工具等，我都会做一些必要的介绍，具体的参考可以参考对应的官方文档、书籍以及我后续可能编写的详细教程。
 
-[![Join the chat at https://gitter.im/simpleyyt/jekyll-theme-next](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/jekyll-theme-next/lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+### 使用人群
+本教程为FPGA基础教程，适用于需要入门或者刚入门的人。那些久经战场的人如果对一些基础的或者一些小技巧感兴趣的朋友，也可以看一看。
 
-![NexT Schemes](http://iissnan.com/nexus/next/next-schemes.jpg)
 
-
-## 浏览器支持 Browser support
-
-![Browser support](http://iissnan.com/nexus/next/browser-support.png)
+### 最后
+最后，学习就是持之以恒，就像我写这个教程一样。如果没有一颗坚持的心，也成不了什么事。希望我可以和大家一起，完成这份教程。本教程的第一版计划在Github的Pages平台完成，博客fork自其他大神的基于Jekyll的Next主题，然后在此基础上进行了一些个性化的修改。  
+因为自己还不太会SEO，所以，这份教程可能很难在百度上搜索出来，我会在后续有精力的时候进行相关方面的推广，希望可以让更多的朋友看到。
