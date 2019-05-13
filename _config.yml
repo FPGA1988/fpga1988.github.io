@@ -72,9 +72,7 @@ plugins:
  - jekyll-feed
  - jekyll-mermaid
 
-gems:
- - jekyll-mermaid
-
+#plugins: jekyll-mermaid]
 # ---------------------------------------------------------------
 # Site Information Settings
 # ---------------------------------------------------------------
