@@ -12,6 +12,45 @@ author: FPGA1988
 language: zh-Hans
 date_format: '%Y-%m-%d'
 
+#user
+#gz89q
+
+# 使能开关
+# 启用
+# 连接状态
+# 已连接
+# 地址获取方式
+# DHCP
+# IP 地址
+# 26.49.178.85
+# 子网掩码
+# 255.255.224.0
+# 默认网关
+# 26.49.160.1
+# 首选DNS服务器
+# 26.0.128.102
+
+# 使能开关
+# 启用
+# 连接状态
+# 已连接
+# 地址获取方式
+# PPPoE
+# IP 地址
+# 100.107.199.29
+# 子网掩码
+# 255.255.255.255
+# 默认网关
+# 100.107.0.1
+# 首选DNS服务器
+# 211.136.150.66
+# 备用DNS服务器
+# 211.136.112.50
+
+#移动光猫帐号 CMCCAdmin 密码 aDm8H%MdA 华为的: telecomadmin, 密码: admintelecom 中国移动光纤宽带丨 P:192.168.100.1 超级账号(telecomadmin)及密.
+
+#teamview : 1 493 908 319
+
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com' and baseurl as '/child'
 url: fpga1988.github.io
