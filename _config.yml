@@ -170,17 +170,13 @@ menu:
   categories: /categories/
   # 标签页
   tags: /tags/
-
-  # 留言
-  #message: /message/
-
-
   # 导航
   myseo: /myseo/index.html
-
-  sitemap: /sitemap.xml
+  #sitemap: /sitemap.xml
   # 公益页面
   #commonweal: /404.html
+  # 留言
+  message: /message/
 
 
 # Enable/Disable menu icons.
@@ -188,6 +184,10 @@ menu:
 #   Map a menu item to a specific FontAwesome icon name.
 #   Key is the name of menu item and value is the name of FontAwesome icon. Key is case-senstive.
 #   When an question mask icon presenting up means that the item has no mapping icon.
+
+# 在_includes/_partials/head.html中进行了fontasesome的配置，这样就可以自动从网络获取
+# 图标而不用将图标下载下来放到本地
+
 menu_icons:
   enable: true
   #KeyMapsToMenuItemKey: NameOfTheIconFromFontAwesome
@@ -200,6 +200,7 @@ menu_icons:
   sitemap: sitemap
   commonweal: heartbeat
   myseo: internet-explorer
+  message: sticky-note
 
 
 
@@ -276,12 +277,14 @@ social:
   GitHub: https://github.com/FPGA1988
   Weibo: https://weibo.com/534505867
   Twitter: https://twitter.com/fpga1988
+  OICQ: 303526279
 
 # Social Links Icons
 # Icon Mapping:
 #   Map a menu item to a specific FontAwesome icon name.
 #   Key is the name of the item and value is the name of FontAwesome icon. Key is case-senstive.
 #   When an globe mask icon presenting up means that the item has no mapping icon.
+# 可以在 http://fontawesome.dashgame.com 中浏览图标样式
 social_icons:
   enable: true
   # Icon Mappings.
@@ -289,6 +292,7 @@ social_icons:
   GitHub: github
   Twitter: twitter
   Weibo: weibo
+  OICQ: qq
 
 
 # Sidebar Avatar
