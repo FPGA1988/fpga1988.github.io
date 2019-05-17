@@ -171,7 +171,7 @@ menu:
   # 标签页
   tags: /tags/
   # 导航
-  myseo: /myseo/index.html
+  navigation_page: /my_navi_page/index.html
   #sitemap: /sitemap.xml
   # 公益页面
   #commonweal: /404.html
@@ -199,7 +199,7 @@ menu_icons:
   archives: archive
   sitemap: sitemap
   commonweal: heartbeat
-  myseo: internet-explorer
+  navigation_page: internet-explorer
   message: commenting
 
 

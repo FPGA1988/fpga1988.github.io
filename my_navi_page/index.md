@@ -1,13 +1,9 @@
 ---
 layout: page
-type: myseo
+type: my_navi_page
 title: 资源导航
 group: menu
 ---
-
-
-# 我的导航
-
 
 ## 友情链接
 
