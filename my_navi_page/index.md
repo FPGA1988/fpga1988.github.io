@@ -31,9 +31,18 @@ group: menu
 
 
 ### 影视
+| 在线 | 下载 |
+| ------ | ------ |
+| ![avatar](http://baidu.com/pic/doge.png) | 中等文本 |
+| 稍微长一点的文本 | 短文本 |
+
+<img src="https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=1816912786,381666049&fm=58&s=80E7D612FD246D114CCA3152030010FA&bpow=121&bpoh=75" width="50%" height="50%" />[renren](https://www.91flac.com)
+
+
 
 
 ## 学海无涯
+
 
 ### 技术前沿
 
