@@ -2,7 +2,7 @@ _site/*
 _theme_packages/*
 
 Thumbs.db
-.DS_Store
+*.DS_Store
 
 !.gitkeep
 
@@ -11,3 +11,5 @@ Thumbs.db
 /vendor
 
 assets/docs/LiveRe_City_Chn.pdf
+
+_posts/Blog/
