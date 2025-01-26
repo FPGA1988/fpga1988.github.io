@@ -2,5 +2,43 @@
 layout: layout
 ---
 
+<style>
+    body {
+        background: linear-gradient(to right, #00c6ff, #0072ff);
+        color: #fff;
+        font-family: 'Arial', sans-serif;
+    }
+    .category-card {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        padding: 20px;
+        margin: 15px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s;
+    }
+    .category-card:hover {
+        transform: scale(1.05);
+    }
+    .category-title {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    .category-icon {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+    }
+</style>
+
 {% assign __ = site.data.languages[site.language] %}
-{% include category.html %}
+
+<div class="categories">
+    <h1>分类目录</h1>
+    {% for category in site.categories %}
+        <div class="category-card">
+            <img src="/path/to/icon/{{ category[0] }}.png" alt="{{ category[0] }} icon" class="category-icon">
+            <div class="category-title">{{ category[0] }}</div>
+            <p>{{ category[1] | first }}</p>
+        </div>
+    {% endfor %}
+</div>
